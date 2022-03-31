@@ -35,13 +35,25 @@ extensions = [
               'sphinx.ext.mathjax',
               'sphinx.ext.ifconfig',
               'sphinx.ext.viewcode',
-              'sphinx.ext.intersphinx',
+            # 'sphinx.ext.intersphinx',
             # 'sphinxcontrib.napoleon',
              'sphinxcontrib.exceltable',
              'sphinxcontrib.bibtex',
              'sphinxcontrib.httpdomain',
              ]
             
+# -- bibtex configuration settings ---------------------------------------------------------
+
+bibtex_bibfiles = ['13_dir/$_14-reference-1-book-food-method.bib',
+                            '13_dir/$_14-reference-2-article-food-method.bib',
+                            '13_dir/$_14-reference-3-book-food-ref.bib',
+                            '13_dir/$_14-reference-4-article-food-ref.bib',
+                            '13_dir/$_14-reference-5-misc-ontology.bib',
+                            '13_dir/$_14-reference-6-misc-data.bib',
+                            '13_dir/$_14-reference-7-misc-web.bib',
+                            '13_dir/$_14-reference-8-article-technology.bib',
+                            ]
+
 
 mathjax_path = 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'
 
@@ -55,17 +67,6 @@ intersphinx_mapping = {
          'numpy' : ('http://docs.scipy.org/doc/numpy',None),
 }
 
-# -- bibtex configuration settings ---------------------------------------------------------
-
-bibtex_bibfiles = ['13_dir/$_14-reference-1-book-food-method.bib',
-                            '13_dir/$_14-reference-2-article-food-method.bib',
-                            '13_dir/$_14-reference-3-book-food-ref.bib',
-                            '13_dir/$_14-reference-4-article-food-ref.bib',
-                            '13_dir/$_14-reference-5-misc-ontology.bib',
-                            '13_dir/$_14-reference-6-misc-data.bib',
-                            '13_dir/$_14-reference-7-misc-web.bib',
-                            '13_dir/$_14-reference-8-article-technology.bib',
-                           ]
 
 # -- Options for Napoleon Extension --------------------------------------------
 
