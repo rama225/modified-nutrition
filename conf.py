@@ -36,8 +36,8 @@ extensions = [
               'sphinx.ext.ifconfig',
               'sphinx.ext.viewcode',
               'sphinx.ext.intersphinx',
-            # 'sphinxcontrib.napoleon',
-               'sphinxcontrib.exceltable',
+              'sphinxcontrib.napoleon',
+             # 'sphinxcontrib.exceltable',
                'sphinxcontrib.bibtex',
                'sphinxcontrib.httpdomain',
                      ]
@@ -60,7 +60,11 @@ mathjax_path = 'http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-
 # -- Intersphinx ---------------------------------------------------------------
 
 intersphinx_cache_limit = 10     # days to keep the cached inventories
-intersphinx_mapping = {'python': ('https://docs.python.org/3/objects.inv')}
+intersphinx_mapping = {
+        'sphinx':('http://sphinx.pocoo.org',None),
+        'python':('http://docs.python.org/3.2',None),
+    'matplotlib':('http://matplotlib.sourceforge.net',None),
+         'numpy':('http://docs.scipy.org/doc/numpy',None),
 
 # -- Options for Napoleon Extension --------------------------------------------
 
