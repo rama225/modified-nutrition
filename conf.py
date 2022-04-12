@@ -70,7 +70,7 @@ intersphinx_mapping = {
 
 # Parse Google style docstrings.
 # See http://google-styleguide.googlecode.com/svn/trunk/pyguide.html
-napoleon_google_docstring = True
+# napoleon_google_docstring = True
 
 # Parse NumPy style docstrings.
 # See https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt
